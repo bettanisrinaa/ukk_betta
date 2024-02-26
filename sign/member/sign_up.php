@@ -43,29 +43,29 @@ if(isset($_POST["signUp"]) ) {
     <div class="container h-100">
       <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="card text-black" style="border-radius: 10px;">
-          <div class="card-body p-md-2">
+          <div class="card-body p-md-0">
           <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-3 mt-5">Register</p>
             <div class="row justify-content-center">
-              <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+              <div class="col-md-8 col-lg-5 col-xl-8 order-1 order-lg-1">
                 <form action="" method="post">
                   <div class="row">
                     <div class="form-outline mb-4  col-md-6 ">
                       <label class="form-label" for="validationCustom01"> <i class="bi bi-person-circle"></i>NISN</label>
-                      <input type="text" id="validationCustom01" class="form-control form-control-lg py-3" name="nisn" autocomplete="off" placeholder="NISN" style="border-radius:25px ;" />
+                      <input type="text" id="validationCustom01" class="form-control form-control-lg py-2" name="nisn" autocomplete="off" placeholder="NISN" style="border-radius:25px ;" />
                     </div>
                     <div class="form-outline mb-4 col-md-6">
-                      <label class="form-label" for="validationCustom02"> <i class="bi bi-person-circle"></i>Nama Lengkap</label>
-                      <input type="text" id="validationCustom02" class="form-control form-control-lg py-3" name="nama" autocomplete="off" placeholder="Nama Lengkap" style="border-radius:25px ;" />
+                      <label class="form-label" for="validationCustom02"> <i class="bi bi-person-circle                                          "></i>Nama Lengkap</label>
+                      <input type="text" id="validationCustom02" class="form-control form-control-lg py-2" name="nama" autocomplete="off" placeholder="Nama Lengkap" style="border-radius:25px ;" />
                     </div >
 </div >
                     <div class="row ">
                     <div class="form-outline mb-4 col-md-6">
                       <label class="form-label" for="validationCustom02"> <i class="bi bi-person-circle"></i>Password</label>
-                      <input type="password" id="validationCustom02" class="form-control form-control-lg py-3" name="password" autocomplete="off" placeholder="Password" style="border-radius:25px ;" />
+                      <input type="password" id="validationCustom02" class="form-control form-control-lg py-2" name="password" autocomplete="off" placeholder="Password" style="border-radius:25px ;" />
                   </div>
                     <div class="form-outline mb-4 col-md-6">
                       <label class="form-label" for="validationCustom01"> <i class="bi bi-person-circle"></i>Alamat</label>
-                      <input type="text" id="validationCustom01" class="form-control form-control-lg py-3" name="alamat" autocomplete="off" placeholder="Alamat" style="border-radius:25px ;" />
+                      <input type="text" id="validationCustom01" class="form-control form-control-lg py-2" name="alamat" autocomplete="off" placeholder="Alamat" style="border-radius:25px ;" />
                     </div>
                   </div>
                   <div class="form-outline mb-4">
@@ -90,13 +90,13 @@ if(isset($_POST["signUp"]) ) {
                     </select>
                   </div>
 
-                  <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                    <button class="btn btn-primary" type="submit" value="Sign Up" name="signUp" class="btn btn-primary btn-lg text-light my-2 py-3" style="width: 100%; height: 60px; border-radius: 30px; font-weight: 600; background-color: #ffc107;">Sign Up</button>
+                  <div class="d-flex justify-content-center mx-4 mb-1 mb-lg-4">
+                    <button class="btn btn-primary" type="submit" value="Sign Up" name="signUp" class="btn btn-primary btn-lg text-light my-2 py-3" style="width: 100%; height: 60px; border-radius: 30px; font-weight: 600; background-color: blue;">Sign Up</button>
                   </div>
 
-                  <br>
+                 <center> <br>
                   <p>Already have an account? <a href="sign_in.php" class="text-decoration-none text-primary">Sign In</a></p>
-                </form><br>
+                </form><br> </center>
               </div>
               
 
