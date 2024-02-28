@@ -170,8 +170,11 @@ if (isset($_POST["search"])) {
                         if ($item['status'] == '0') {
                           echo '<b class="badge bg-warning">Menunggu Persetujuan</b>';
                           ?>
+                          <div>
                           <a href="batalPinjam.php?id=<?= $item['peminjaman_id']; ?>" class="btn btn-danger mt-2" style="width:100px;" onclick="return confirm('Apakah anda ingin membatalkan peminjaman ini?');"> Batalkan</a>
-                          <?php
+                          <a href="https://api.whatsapp.com/send/?phone=%2B62895322295265&text&type=phone_number&app_absent=0"> <img src="../../assets/whatsapp.png" width="30px" style="margin-left:10px; margin-top: 7px ;" alt=""></a> 
+                          </div> 
+                         <?php
                         } elseif ($item['status'] == '1') {
                         ?>
                         <div>
@@ -180,6 +183,9 @@ if (isset($_POST["search"])) {
                       <div>
                       <a href="kembalikan.php?id=<?= $item['peminjaman_id']; ?>" class="btn btn-success mt-1" style="width: 130px;">kembalikan</a>
                     </div>
+                    <div>
+                      <a href="https://api.whatsapp.com/send/?phone=%2B62895322295265&text&type=phone_number&app_absent=0"> <img src="../../assets/whatsapp.png" alt=""></a> 
+                        </div>
                     <?php
                     }
                     if ($item['status'] == '2') {
