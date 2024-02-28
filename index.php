@@ -19,7 +19,9 @@
   <title>Hello, world!</title>
 </head>
 <style>
-  
+   body {
+    background-color: papayawhip;
+  }
   /* Add this to your CSS */
   .img-small {
     width: 50px;
@@ -126,12 +128,16 @@
         </a>
       </div>
 
-      <div class="navbar-menu" id="open-navbar1">
-        <ul class="navbar-nav">
-          <li><a href="sign/member/sign_in.php">Siswa</a></li>
-          <li><a href="sign/admin/sign_in.php">Admin</a></li>
-        </ul>
-      </div>
+      <div class="dropdown">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+    Menu
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="sign/member/sign_in.php">Siswa</a></li>
+    <li><a class="dropdown-item" href="sign/admin/sign_in.php">Admin</a></li>
+  </ul>
+</div>
+
     </div>
   </nav>
 
